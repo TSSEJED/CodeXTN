@@ -1,0 +1,307 @@
+/* main.css */
+
+/* Define CSS Variables for Easy Maintenance */
+:root {
+    --bg-color: #1E1E2D;         /* Dark Navy */
+    --text-color: #FFFFFF;       /* White */
+    --accent-blue: #00A8E8;      /* Neon Blue */
+    --accent-orange: #F39C12;    /* Bright Orange */
+    --hover-orange: #FFA500;     /* Lighter Orange for hover */
+    --font-primary: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --transition-speed: 0.3s;
+  }
+  
+  /* Global Reset */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body Styling */
+  body {
+    font-family: var(--font-primary);
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    overflow-x: hidden;
+  }
+  
+  /* Header (Fixed Navigation Bar) */
+  header {
+    background-color: var(--bg-color);
+    padding: 1.25rem 2.5rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    transition: background-color var(--transition-speed);
+  }
+  
+  .header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+    font-size: 1.8rem;
+    font-weight: 700;
+  }
+  
+  .logo-icon {
+    margin-right: 0.75rem;
+  }
+  
+  .logo-text {
+    color: var(--accent-orange);
+    letter-spacing: 2px;
+  }
+  
+  /* Navigation Links */
+  nav ul {
+    list-style: none;
+    display: flex;
+  }
+  
+  nav li {
+    margin-left: 1.5rem;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 1.1rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    transition: color var(--transition-speed), transform var(--transition-speed);
+  }
+  
+  nav a:hover {
+    color: var(--accent-blue);
+    transform: translateY(-3px);
+  }
+  
+  /* Hero Section */
+  .hero {
+    padding: 100px 2.5rem 5rem 2.5rem;
+    text-align: center;
+    background: linear-gradient(135deg, var(--bg-color), #2B2B3A);
+    background-size: cover;
+    background-position: center;
+    margin-top: 80px; /* Offset fixed header */
+  }
+  
+  .hero h1 {
+    font-size: 4rem;
+    margin-bottom: 1.25rem;
+    color: var(--accent-blue);
+    text-transform: uppercase;
+    letter-spacing: 3px;
+  }
+  
+  .hero p {
+    font-size: 1.4rem;
+    margin-bottom: 2.5rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 300;
+  }
+  
+  .cta-button {
+    background-color: var(--accent-orange);
+    color: var(--bg-color);
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color var(--transition-speed), transform var(--transition-speed);
+    font-weight: 600;
+    text-decoration: none;
+  }
+  
+  .cta-button:hover {
+    background-color: var(--hover-orange);
+    transform: translateY(-3px);
+  }
+  
+  /* Section Common Styling */
+  .section {
+    padding: 6rem 2.5rem;
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .section h2 {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+    color: var(--accent-blue);
+    text-transform: uppercase;
+  }
+  
+  .section p {
+    font-size: 1.2rem;
+    margin-bottom: 3rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 300;
+  }
+  
+  /* Features (How It Works) */
+  .features {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+  
+  .feature-item {
+    background-color: #2B2B3A;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 250px;
+    text-align: center;
+    transition: transform var(--transition-speed);
+  }
+  
+  .feature-item h3 {
+    font-size: 1.5rem;
+    color: var(--accent-blue);
+    margin-bottom: 1rem;
+  }
+  
+  .feature-item p {
+    font-size: 1rem;
+    color: var(--text-color);
+  }
+  
+  .feature-item:hover {
+    transform: translateY(-5px);
+  }
+  
+  /* Featured Challenges Section */
+  .challenge-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+  
+  .challenge-item {
+    background-color: #2B2B3A;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+  }
+  
+  .challenge-item h3 {
+    color: var(--accent-blue);
+  }
+  
+  .challenge-item a {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.75rem 1.5rem;
+    background-color: var(--accent-blue);
+    color: var(--bg-color);
+    border-radius: 25px;
+    text-decoration: none;
+    transition: background-color var(--transition-speed);
+  }
+  
+  .challenge-item a:hover {
+    background-color: var(--hover-orange);
+  }
+  
+  /* Leaderboard Section */
+  .leaderboard-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 2rem;
+  }
+  
+  .leaderboard-list li {
+    background-color: #2B2B3A;
+    padding: 1rem;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+  }
+  
+  .leaderboard-list li:nth-child(odd) {
+    background-color: #333;
+  }
+  
+  /* Community Projects Section */
+  .community-projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+  
+  .project-item {
+    background-color: #2B2B3A;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+  }
+  
+  .project-item h3 {
+    color: var(--accent-blue);
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .project-item p {
+    color: var(--text-color);
+    font-size: 1rem;
+  }
+  
+  /* Footer Styling */
+  footer {
+    background-color: var(--bg-color);
+    padding: 2rem 2.5rem;
+    text-align: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    margin-top: 4rem;
+  }
+  
+  footer p {
+    font-size: 1rem;
+  }
+  
+  footer a {
+    text-decoration: none;
+    color: var(--accent-blue);
+  }
+  
+  /* Simple Fade In Animation */
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .hero h1, .hero p, .cta-button, .section {
+    animation: fadeInUp 0.8s ease-out;
+  }
+  

@@ -1,0 +1,57 @@
+/* mobile.css */
+
+/* Mobile Specific Adjustments */
+@media (max-width: 768px) {
+    header {
+      padding: 1rem 1.5rem;
+    }
+  
+    .header-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    nav ul {
+      flex-direction: column;
+      margin-top: 1rem;
+    }
+  
+    nav li {
+      margin: 0.5rem 0;
+    }
+  
+    .hero {
+      padding: 4rem 1.5rem;
+      margin-top: 70px; /* Adjust header height offset */
+    }
+  
+    .hero h1 {
+      font-size: 2.5rem;
+    }
+  
+    .hero p {
+      font-size: 1.1rem;
+    }
+  
+    .section {
+      padding: 3rem 1.5rem;
+    }
+  
+    .section h2 {
+      font-size: 2.5rem;
+    }
+  
+    .section p {
+      font-size: 1rem;
+    }
+  
+    .features {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .challenge-list, .community-projects {
+      grid-template-columns: 1fr;
+    }
+  }
+  
