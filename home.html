@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Home</title>
+</head>
+<body>
+    <h1>Welcome, User!</h1>
+
+    <!-- Main Content -->
+    <div id="user-content">
+        <h2>Your Challenges</h2>
+        <p>List of available challenges...</p>
+    </div>
+
+    <!-- Ads Section -->
+    <div id="ads">
+        <h3>Sponsored Ads</h3>
+        <div class="ad">
+            <p>Ad 1: Get a coding course at 50% off!</p>
+        </div>
+        <div class="ad">
+            <p>Ad 2: Build your skills with a premium coding platform!</p>
+        </div>
+        <div class="ad">
+            <p>Ad 3: Check out the latest tech gadgets!</p>
+        </div>
+    </div>
+
+    <!-- Logout Button -->
+    <button id="logout-btn">Logout</button>
+
+    <script>
+        // Ensure only regular users have access to this page
+        let userRole = localStorage.getItem('userRole');
+        if (userRole !== 'user') {
+            // If not a user, redirect to the admin page
+            window.location.href = 'admin.html';
+        }
+
+        // Logout logic
+        document.getElementById('logout-btn').addEventListener('click', function() {
+            localStorage.removeItem('userRole');
+            window.location.href = 'login.html'; // Redirect to login
+        });
+    </script>
+</body>
+</html>

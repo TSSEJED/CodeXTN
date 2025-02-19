@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects | CodeXTN</title>
+  <link rel="stylesheet" href="main.css" />
+  <style>
+    /* Additional styling for projects page */
+    .projects-section {
+      padding: 6rem 2.5rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .projects-title {
+      font-size: 3rem;
+      color: var(--accent-blue);
+      text-transform: uppercase;
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+    .community-projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+    }
+    .project-item {
+      background-color: #2B2B3A;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      text-align: center;
+    }
+    .project-item h3 {
+      color: var(--accent-blue);
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+    .project-item p {
+      color: var(--text-color);
+      font-size: 1rem;
+    }
+    .project-item a {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.75rem 1.5rem;
+      background-color: var(--accent-blue);
+      color: var(--bg-color);
+      border-radius: 25px;
+      text-decoration: none;
+      transition: background-color var(--transition-speed);
+    }
+    .project-item a:hover {
+      background-color: var(--hover-orange);
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation Header -->
+  <header>
+    <div class="header-container">
+      <div class="logo">
+        <span class="logo-icon">💻</span>
+        <span class="logo-text">CodeXTN</span>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="leader.html">Leaderboard</a></li>
+          <li><a href="challenges.html">Challenges</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="login.html">Login</a></li>
+          <li><a href="signup.html">Sign Up</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Projects Section -->
+  <section class="projects-section">
+    <h2 class="projects-title">Projects</h2>
+    <div class="community-projects">
+      <!-- Example project items (approved by admin) -->
+      <div class="project-item">
+        <h3>Project 1</h3>
+        <p>A dynamic to-do list application built with JavaScript.</p>
+        <a href="#">View Project</a>
+      </div>
+      <div class="project-item">
+        <h3>Project 2</h3>
+        <p>An interactive portfolio website using HTML, CSS, and JavaScript.</p>
+        <a href="#">View Project</a>
+      </div>
+      <div class="project-item">
+        <h3>Project 3</h3>
+        <p>A responsive weather app that utilizes an external API.</p>
+        <a href="#">View Project</a>
+      </div>
+      <div class="project-item">
+        <h3>Project 4</h3>
+        <p>A chat application with real-time messaging capabilities.</p>
+        <a href="#">View Project</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 CodeXTN. All rights reserved.</p>
+  </footer>
+</body>
+</html>

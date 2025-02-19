@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Challenges | CodeXTN</title>
+  <link rel="stylesheet" href="main.css" />
+  <style>
+    /* Additional styling for challenges page */
+    .challenges-section {
+      padding: 6rem 2.5rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .challenges-title {
+      font-size: 3rem;
+      color: var(--accent-blue);
+      text-transform: uppercase;
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+    .challenge-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+    }
+    .challenge-item {
+      background-color: #2B2B3A;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      text-align: center;
+    }
+    .challenge-item h3 {
+      color: var(--accent-blue);
+      margin-bottom: 1rem;
+      font-size: 1.5rem;
+    }
+    .challenge-item p {
+      color: var(--text-color);
+      font-size: 1rem;
+    }
+    .challenge-item a {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.75rem 1.5rem;
+      background-color: var(--accent-blue);
+      color: var(--bg-color);
+      border-radius: 25px;
+      text-decoration: none;
+      transition: background-color var(--transition-speed);
+    }
+    .challenge-item a:hover {
+      background-color: var(--hover-orange);
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation Header -->
+  <header>
+    <div class="header-container">
+      <div class="logo">
+        <span class="logo-icon">💻</span>
+        <span class="logo-text">CodeXTN</span>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="leader.html">Leaderboard</a></li>
+          <li><a href="challenges.html">Challenges</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="login.html">Login</a></li>
+          <li><a href="signup.html">Sign Up</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Challenges Section -->
+  <section class="challenges-section">
+    <h2 class="challenges-title">Challenges</h2>
+    <div class="challenge-list">
+      <!-- Example challenge items -->
+      <div class="challenge-item">
+        <h3>Challenge 1</h3>
+        <p>Solve a complex algorithm problem.</p>
+        <a href="#">Attempt Challenge</a>
+      </div>
+      <div class="challenge-item">
+        <h3>Challenge 2</h3>
+        <p>Build a simple web app using JavaScript.</p>
+        <a href="#">Attempt Challenge</a>
+      </div>
+      <div class="challenge-item">
+        <h3>Challenge 3</h3>
+        <p>Create a responsive layout with CSS Grid.</p>
+        <a href="#">Attempt Challenge</a>
+      </div>
+      <div class="challenge-item">
+        <h3>Challenge 4</h3>
+        <p>Debug a broken piece of code.</p>
+        <a href="#">Attempt Challenge</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 CodeXTN. All rights reserved.</p>
+  </footer>
+</body>
+</html>

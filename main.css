@@ -304,3 +304,23 @@
   .hero h1, .hero p, .cta-button, .section {
     animation: fadeInUp 0.8s ease-out;
   }
+  /* In a separate CSS file or within <style> tags */
+#ads {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #f7f7f7;
+    border: 1px solid #ddd;
+}
+
+#ad {
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#ad p {
+    margin: 0;
+    font-weight: bold;
+}

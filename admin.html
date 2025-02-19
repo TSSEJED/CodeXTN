@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+</head>
+<body>
+    <h1>Admin Dashboard</h1>
+
+    <!-- Admin Tools -->
+    <div id="admin-tools">
+        <h2>Manage Users</h2>
+        <button>Add New Challenge</button>
+        <button>View User Submissions</button>
+        <button>Manage Challenges</button>
+        <button>Manage Projects</button>
+        <button>View User Leaderboard</button>
+    </div>
+
+    <!-- Logout Button -->
+    <button id="logout-btn">Logout</button>
+
+    <script>
+        // Ensure only the admin has access to this page
+        let userRole = localStorage.getItem('userRole');
+        if (userRole !== 'admin') {
+            // If not an admin, redirect to the home page
+            window.location.href = 'home.html';
+        }
+
+        // Logout logic
+        document.getElementById('logout-btn').addEventListener('click', function() {
+            localStorage.removeItem('userRole');
+            window.location.href = 'login.html'; // Redirect to login
+        });
+    </script>
+</body>
+</html>
