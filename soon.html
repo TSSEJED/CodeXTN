@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CodeXTN - Coming Soon</title>
+  <link rel="stylesheet" href="main.css">
+  <style>
+    /* Global Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #1E1E2D; /* Dark Navy/Charcoal */
+      color: #FFFFFF; /* White */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      text-align: center;
+      padding: 20px;
+    }
+    
+    .container {
+      max-width: 800px;
+    }
+    
+    h1 {
+      font-size: 48px;
+      color: #00A8E8; /* Neon Blue */
+      margin-bottom: 20px;
+    }
+    
+    p {
+      font-size: 20px;
+      color: #FFFFFF;
+      margin-bottom: 30px;
+    }
+    
+    .cta-button {
+      background-color: #F39C12; /* Bright Orange */
+      color: #1E1E2D; /* Dark Navy */
+      padding: 12px 30px;
+      border: none;
+      border-radius: 5px;
+      font-size: 18px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    
+    .cta-button:hover {
+      background-color: #00A8E8; /* Neon Blue */
+    }
+    /* Countdown (optional) */
+    .countdown {
+      font-size: 36px;
+      margin-bottom: 20px;
+      color: #F39C12;
+    }
+    
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 36px;
+      }
+      
+      p {
+        font-size: 18px;
+      }
+      
+      .countdown {
+        font-size: 28px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="header-container">
+      <div class="logo">
+        <span class="logo-icon">💻</span>
+        <span class="logo-text">CodeXTN</span>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="leader.html">Leaderboard</a></li>
+          <li><a href="login.html">Challenges</a></li>
+          <li><a href="login.html">Projects</a></li>
+          <li><a href="login.html">Login</a></li>
+          <li><a href="signup.html">Sign Up</a></li>
+          <li><a href="about.html">About Us</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <div class="container">
+    <h1>Something Big is Coming Soon!</h1>
+    <p>We're working hard to bring you an amazing platform where you can learn, compete, and build. Stay tuned for updates!</p>
+    <!-- Optional Countdown Timer -->
+    <div class="countdown" id="countdown">00d 00h 00m 00s</div>
+    <button class="cta-button" onclick="alert('Thank you for your interest!')">Notify Me</button>
+  </div>
+
+  <script>
+    // Optional Countdown Timer Script
+    // Set the date we're counting down to (change this to your launch date)
+    var launchDate = new Date("Dec 31, 2025 23:59:59").getTime();
+
+    // Update the countdown every 1 second
+    var countdownTimer = setInterval(function() {
+      var now = new Date().getTime();
+      var distance = launchDate - now;
+
+      // Time calculations for days, hours, minutes and seconds
+      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+      // Display the result in the element with id="countdown"
+      document.getElementById("countdown").innerHTML = days + "d " + hours + "h "
+      + minutes + "m " + seconds + "s ";
+
+      // If the countdown is finished, write some text
+      if (distance < 0) {
+        clearInterval(countdownTimer);
+        document.getElementById("countdown").innerHTML = "Launched!";
+      }
+    }, 1000);
+  </script>
+</body>
+</html>

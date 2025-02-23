@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About Us - CodeXTN</title>
+  <style>
+    /* Global Styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #1E1E2D; /* Dark Navy/Charcoal */
+      color: #FFFFFF; /* Primary text color */
+      line-height: 1.6;
+    }
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+    /* Header */
+    header {
+      background-color: #1E1E2D;
+      padding: 20px 0;
+      border-bottom: 1px solid #333;
+    }
+    .header-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+    nav ul li a {
+      font-size: 18px;
+      color: #FFFFFF;
+      transition: color 0.3s ease;
+    }
+    nav ul li a:hover,
+    nav ul li a.active {
+      color: #F39C12; /* Bright Orange */
+    }
+    .cta-button {
+      background-color: #F39C12; /* Bright Orange */
+      color: #1E1E2D; /* Dark Navy */
+      padding: 12px 24px;
+      border-radius: 5px;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+    .cta-button:hover {
+      background-color: #00A8E8; /* Neon Blue */
+    }
+    /* About Us Section */
+    .about-us {
+      max-width: 800px;
+      margin: 60px auto;
+      padding: 0 20px;
+      text-align: center;
+    }
+    .about-us h1 {
+      font-size: 36px;
+      color: #00A8E8; /* Neon Blue */
+      margin-bottom: 20px;
+    }
+    .about-us h2 {
+      font-size: 28px;
+      color: #F39C12; /* Bright Orange */
+      margin: 30px 0 10px;
+    }
+    .about-us p {
+      font-size: 18px;
+      margin-bottom: 20px;
+      color: #CCCCCC;
+    }
+    .about-us ul {
+      text-align: left;
+      margin: 20px auto;
+      max-width: 600px;
+      padding-left: 20px;
+    }
+    .about-us ul li {
+      font-size: 18px;
+      margin-bottom: 10px;
+      color: #FFFFFF;
+    }
+    /* Footer */
+    footer {
+      background-color: #1E1E2D;
+      padding: 20px;
+      text-align: center;
+      border-top: 1px solid #333;
+      margin-top: 40px;
+    }
+    footer p {
+      font-size: 14px;
+      color: #CCCCCC;
+    }
+    footer a {
+      color: #00A8E8;
+      transition: color 0.3s ease;
+    }
+    footer a:hover {
+      color: #F39C12;
+    }
+    /* Responsive Styles */
+    @media (max-width: 768px) {
+      .header-container {
+        flex-direction: column;
+      }
+      nav ul {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 10px;
+      }
+      .about-us h1 {
+        font-size: 28px;
+      }
+      .about-us h2 {
+        font-size: 24px;
+      }
+      .about-us p, .about-us ul li {
+        font-size: 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="header-container">
+      <div class="logo">
+        <span class="logo-icon">💻</span>
+        <span class="logo-text">CodeXTN</span>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="challenges.html">Challenges</a></li>
+          <li><a href="leaderboard.html">Leaderboard</a></li>
+          <li><a href="community.html">Community</a></li>
+          <li><a href="aboutus.html" class="active">About Us</a></li>
+        </ul>
+      </nav>
+      <a href="signup.html" class="cta-button">Get Started</a>
+    </div>
+  </header>
+
+  <section class="about-us">
+    <h1>About CodeXTN</h1>
+    <p>
+      CodeXTN is more than just a coding platform—it’s a movement for young developers to <strong>learn, compete, and build</strong>. We believe coding is not only about writing code, but also about solving real-world problems, fostering creativity, and collaborating with like-minded individuals.
+    </p>
+
+    <h2>🚀 Our Mission</h2>
+    <p>
+      To create a <strong>fun, competitive, and educational</strong> environment where coders of all levels can thrive, improve, and build real-world projects.
+    </p>
+
+    <h2>🔥 Why CodeXTN?</h2>
+    <ul>
+      <li>A <strong>unique gamified learning experience</strong> with daily challenges and competitions.</li>
+      <li>A <strong>supportive community</strong> of passionate developers.</li>
+      <li>An opportunity to <strong>gain recognition</strong> and build a professional coding portfolio.</li>
+    </ul>
+
+    <p>
+      Join us, take on challenges, and show the world what you can build!
+    </p>
+  </section>
+
+  <footer>
+    <p>© 2025 CodeXTN. All rights reserved.</p>
+    <p>Follow us on <a href="#">Instagram</a>, <a href="#">Twitter</a>, and <a href="#">GitHub</a></p>
+  </footer>
+
+</body>
+</html>
